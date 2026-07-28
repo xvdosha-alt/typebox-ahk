@@ -44,12 +44,19 @@
 2. Нажми **Download AutoHotkey v2**
 3. Установи с настройками по умолчанию
 
-### 2. Скопируй скрипт
+### 2. Скачай или клонируй репозиторий
 
-Скопируй папку `ahk` (или файл `typebox.ahk`) на Windows-машину в любое место, например:
+```bash
+git clone https://github.com/xvdosha-alt/typebox-ahk.git
+cd typebox-ahk
+```
+
+Или скачай ZIP с [GitHub Releases](https://github.com/xvdosha-alt/typebox-ahk/releases).
+
+Скопируй файлы на Windows-машину, например:
 
 ```
-C:\Tools\typebox\typebox.ahk
+C:\Tools\typebox-ahk\typebox.ahk
 ```
 
 ### 3. Запуск
