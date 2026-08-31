@@ -11,7 +11,7 @@ Runs locally, does not send data anywhere.
 
 ## Author
 
-[xvDosha](https://github.com/xvdosha-alt)
+[xvDosha](https://github.com/xvDoshik)
 
 ---
 
@@ -52,11 +52,11 @@ Runs locally, does not send data anywhere.
 ### 2. Download or clone the repository
 
 ```bash
-git clone https://github.com/xvdosha-alt/typebox-ahk.git
+git clone https://github.com/xvDoshik/typebox-ahk.git
 cd typebox-ahk
 ```
 
-Or download a ZIP from [GitHub Releases](https://github.com/xvdosha-alt/typebox-ahk/releases).
+Or download a ZIP from [GitHub Releases](https://github.com/xvDoshik/typebox-ahk/releases).
 
 Copy files to a Windows machine, for example:
 

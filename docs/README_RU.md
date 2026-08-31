@@ -11,7 +11,7 @@
 
 ## Автор
 
-[xvDosha](https://github.com/xvdosha-alt)
+[xvDosha](https://github.com/xvDoshik)
 
 ---
 
@@ -52,11 +52,11 @@
 ### 2. Скачай или клонируй репозиторий
 
 ```bash
-git clone https://github.com/xvdosha-alt/typebox-ahk.git
+git clone https://github.com/xvDoshik/typebox-ahk.git
 cd typebox-ahk
 ```
 
-Или скачай ZIP с [GitHub Releases](https://github.com/xvdosha-alt/typebox-ahk/releases).
+Или скачай ZIP с [GitHub Releases](https://github.com/xvDoshik/typebox-ahk/releases).
 
 Скопируй файлы на Windows-машину, например:
 
