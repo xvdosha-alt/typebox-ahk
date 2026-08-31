@@ -1,160 +1,165 @@
+EN | [RU](docs/README_RU.md)
+
 # typebox
 
-Небольшая утилита на **AutoHotkey v2** для Windows. Открывает панель с полем ввода, куда можно заранее вставить или набрать текст, а затем автоматически «напечатать» его в активное окно — как макрос, но удобнее для длинных фрагментов.
+![AutoHotkey](https://img.shields.io/badge/AutoHotkey-334455?style=flat-square&logo=autohotkey&logoColor=white)
 
-Работает локально, никуда не отправляет данные.
 
-## Автор
+Small **AutoHotkey v2** utility for Windows. Opens a panel with an input field where you can paste or type text in advance, then automatically "types" it into the active window - like a macro, but more convenient for long fragments.
+
+Runs locally, does not send data anywhere.
+
+## Author
 
 [xvDosha](https://github.com/xvdosha-alt)
 
 ---
 
-## Возможности
+## Features
 
-- Панель ввода в левом верхнем углу экрана
-- Автофокус в поле — сразу можно вставлять (`Ctrl+V`) или печатать
-- Автоввод текста в предыдущее активное окно
-- **Esc** перехватывается только пока панель открыта
+- Input panel in the top-left corner of the screen
+- Auto-focus in the field - you can paste (`Ctrl+V`) or type immediately
+- Auto-type text into the previously active window
+- **Esc** is intercepted only while the panel is open
 
 ---
 
-## Горячие клавиши
+## Hotkeys
 
-| Клавиша | Действие |
+| Key | Action |
 |---|---|
-| **F8** | Открыть / закрыть панель |
-| **F9** | Закрыть панель и начать автоввод текста |
-| **Esc** | Закрыть панель без автоввода |
+| **F8** | Open / close panel |
+| **F9** | Close panel and start auto-typing |
+| **Esc** | Close panel without auto-typing |
 
 ---
 
-## Требования
+## Requirements
 
-- **Windows 10** или **Windows 11**
-- [AutoHotkey v2](https://www.autohotkey.com/) — скачивай именно **v2**, не v1
+- **Windows 10** or **Windows 11**
+- [AutoHotkey v2](https://www.autohotkey.com/) - download **v2**, not v1
 
 ---
 
-## Установка
+## Installation
 
-### 1. Установи AutoHotkey v2
+### 1. Install AutoHotkey v2
 
-1. Открой [autohotkey.com](https://www.autohotkey.com/)
-2. Нажми **Download AutoHotkey v2**
-3. Установи с настройками по умолчанию
+1. Open [autohotkey.com](https://www.autohotkey.com/)
+2. Click **Download AutoHotkey v2**
+3. Install with default settings
 
-### 2. Скачай или клонируй репозиторий
+### 2. Download or clone the repository
 
 ```bash
 git clone https://github.com/xvdosha-alt/typebox-ahk.git
 cd typebox-ahk
 ```
 
-Или скачай ZIP с [GitHub Releases](https://github.com/xvdosha-alt/typebox-ahk/releases).
+Or download a ZIP from [GitHub Releases](https://github.com/xvdosha-alt/typebox-ahk/releases).
 
-Скопируй файлы на Windows-машину, например:
+Copy files to a Windows machine, for example:
 
 ```
 C:\Tools\typebox-ahk\typebox.ahk
 ```
 
-### 3. Запуск
+### 3. Launch
 
-**Способ 1 — двойной клик**
+**Method 1 - double click**
 
-Дважды кликни по `typebox.ahk`. В трее появится зелёная иконка **H** — скрипт работает.
+Double-click `typebox.ahk`. A green **H** icon appears in the tray - the script is running.
 
-**Способ 2 — из PowerShell / CMD**
+**Method 2 - from PowerShell / CMD**
 
 ```powershell
 & "C:\Program Files\AutoHotkey\v2\AutoHotkey64.exe" "C:\Tools\typebox\typebox.ahk"
 ```
 
-**Способ 3 — один exe-файл (без AHK на других ПК)**
+**Method 3 - single exe (no AHK on other PCs)**
 
 ```powershell
 & "C:\Program Files\AutoHotkey\v2\Compiler\Ahk2Exe.exe" /in typebox.ahk /out typebox.exe
 ```
 
-После сборки запускай `typebox.exe` — AutoHotkey на целевом ПК не нужен.
+After building, run `typebox.exe` - AutoHotkey is not needed on the target PC.
 
 ---
 
-## Автозапуск с Windows
+## Autostart with Windows
 
-1. Нажми `Win + R`, введи `shell:startup`, Enter
-2. Скопируй туда ярлык на `typebox.ahk` или `typebox.exe`
+1. Press `Win + R`, enter `shell:startup`, Enter
+2. Copy a shortcut to `typebox.ahk` or `typebox.exe` there
 
-Скрипт будет стартовать при каждом входе в систему.
-
----
-
-## Как пользоваться
-
-1. Открой окно, куда нужно ввести текст (блокнот, браузер, Discord и т.д.)
-2. Нажми **F8** — появится панель слева сверху, курсор уже в поле ввода
-3. Вставь или набери нужный текст
-4. Нажми **F9** — панель закроется, текст начнёт вводиться сам в то окно, которое было активно на шаге 1
-
-### Закрыть без ввода
-
-- **F8** — если панель уже открыта
-- **Esc** — пока панель открыта
+The script will start on every login.
 
 ---
 
-## Панель
+## Usage
 
-| Свойство | Значение |
+1. Open the window where you need to enter text (Notepad, browser, Discord, etc.)
+2. Press **F8** - a panel appears top-left, cursor already in the input field
+3. Paste or type the text you need
+4. Press **F9** - the panel closes and text starts typing into the window that was active in step 1
+
+### Close without typing
+
+- **F8** - if the panel is already open
+- **Esc** - while the panel is open
+
+---
+
+## Panel
+
+| Property | Value |
 |---|---|
-| Позиция | Левый верхний угол (12px от края) |
-| Заголовок | Нет |
-| Кнопка закрытия | Нет |
-| Поверх других окон | Да |
+| Position | Top-left corner (12px from edge) |
+| Title bar | None |
+| Close button | None |
+| Always on top | Yes |
 
 ---
 
-## Сборка exe
+## Build exe
 
 ```powershell
 cd C:\Tools\typebox
 & "C:\Program Files\AutoHotkey\v2\Compiler\Ahk2Exe.exe" /in typebox.ahk /out typebox.exe
 ```
 
-Готовый `typebox.exe` можно переносить на другие Windows-ПК без установки AutoHotkey.
+The resulting `typebox.exe` can be moved to other Windows PCs without installing AutoHotkey.
 
 ---
 
-## Частые вопросы
+## FAQ
 
-### Текст вводится не в то окно
+### Text types into the wrong window
 
-Перед **F8** сначала кликни в нужное окно. Скрипт запоминает активное окно в момент открытия панели и возвращает фокус туда перед автовводом.
+Before **F8**, click the target window first. The script remembers the active window when opening the panel and returns focus there before auto-typing.
 
-### Esc не работает в других программах
+### Esc does not work in other programs
 
-**Esc** перехватывается только пока панель открыта. После закрытия панели **Esc** снова работает как обычно.
+**Esc** is intercepted only while the panel is open. After closing the panel, **Esc** works normally again.
 
-### F8/F9 не срабатывают
+### F8/F9 do not work
 
-- Убедись, что скрипт запущен (иконка **H** в трее)
-- Проверь, что установлен именно **AutoHotkey v2**
-- Другие программы могут перехватывать F8/F9 — закрой их или смени клавиши в `typebox.ahk`
+- Make sure the script is running ( **H** icon in the tray)
+- Verify **AutoHotkey v2** is installed, not v1
+- Other programs may capture F8/F9 - close them or change keys in `typebox.ahk`
 
-### Можно ли сменить горячие клавиши?
+### Can I change hotkeys?
 
-Да. В начале `typebox.ahk`:
+Yes. At the top of `typebox.ahk`:
 
 ```ahk
 F8:: app.Toggle()
 F9:: app.Submit()
 ```
 
-Замени `F8` / `F9` на нужные, например `^!t::` (Ctrl+Alt+T).
+Replace `F8` / `F9` with what you need, e.g. `^!t::` (Ctrl+Alt+T).
 
 ---
 
-## Лицензия
+## License
 
 MIT
